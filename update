@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "Updating Vim environment..."
+git pull --recurse-submodules origin master
+git submodule update --recursive
+
+echo "Validating update..."
+if [[ $(git submodule foreach git branch | grep "*") == *master* ]]; then
+  echo "Update valid, no corruption detected."
+else
+  echo "Update corrupt, trying to rescue..."
+  git submodule foreach git checkout master
+fi
+
+echo "Checking status..."
+git status
+
+echo "Update completed! Please commit possible changes."
