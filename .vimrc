@@ -14,20 +14,25 @@ set showcmd     " show partial commands below the status line
 set scrolloff=3 " have some context around the current line always on screen
 set wrap        " Enable wrapping of text
 set linebreak   " Only wrap character on break option
+set showmatch   " highlight matching braces
+
+" Folding
+set foldenable          " enable folding
+set foldmethod=indent   " fold based on indent level
 
 " statusline
-set laststatus=2                              " display status line
-set statusline=
-set statusline+=%<\                           " cut at start
-set statusline+=%-40f\                        " path
-set statusline+=%=%1*%y%*%*\                  " file type
-set statusline+=%{strlen(&fenc)?&fenc:&enc},  " encoding
-set statusline+=%{fugitive#statusline()}      " Show git branch
-set statusline+=%10((%l,%c)%)\                " line and column
-set statusline+=%P                            " percentage of file
-set statusline+=%#warningmsg#                 " show syntastic messages
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set laststatus=2                              " display status line
+"set statusline=
+"set statusline+=%<\                           " cut at start
+"set statusline+=%-40f\                        " path
+"set statusline+=%=%1*%y%*%*\                  " file type
+"set statusline+=%{strlen(&fenc)?&fenc:&enc},  " encoding
+"set statusline+=%{fugitive#statusline()}      " Show git branch
+"set statusline+=%10((%l,%c)%)\                " line and column
+"set statusline+=%P                            " percentage of file
+"set statusline+=%#warningmsg#                 " show syntastic messages
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 " Whitespace
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
