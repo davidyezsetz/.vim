@@ -10,6 +10,7 @@ See [bundle](https://github.com/davidyezsetz/.vim/tree/master/bundle)
 3. Make sure you're in your home folder `cd ~`
 4. Get the setup `git clone --recursive https://github.com/davidyezsetz/.vim.git`
 5. Symlink Vim configuration to home folder `ln -s ~/.vim/.vimrc .vimrc`
+6. Install patched powerline fonts: https://github.com/powerline/fonts
 
 ## Updates
 1. Run `./update`
