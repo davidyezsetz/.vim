@@ -36,6 +36,11 @@ set foldnestmax=10      " 10 nested fold max
 "set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
 
+" Vim-Airline
+let g:airline_powerline_fonts = 1 "automatically download symbols
+let g:airline_theme = 'light'     "set colours
+
+
 " Whitespace
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
