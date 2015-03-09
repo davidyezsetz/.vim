@@ -19,6 +19,8 @@ set showmatch   " highlight matching braces
 " Folding
 set foldenable          " enable folding
 set foldmethod=indent   " fold based on indent level
+set foldlevelstart=10   " open most folds by default
+set foldnestmax=10      " 10 nested fold max
 
 " statusline
 "set laststatus=2                              " display status line
