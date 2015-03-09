@@ -12,6 +12,7 @@ See [bundle](https://github.com/davidyezsetz/.vim/tree/master/bundle)
 5. Symlink Vim configuration to home folder `ln -s ~/.vim/.vimrc .vimrc`
 6. Install patched powerline fonts: https://github.com/powerline/fonts (dependancy for Airline)
 7. Install Exuberant CTAGs (dependency for Tagbar)
+8. Install YouCompleteMe dependencies https://github.com/Valloric/YouCompleteMe
 
 ## Updates
 1. Run `./update`
