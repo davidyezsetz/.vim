@@ -96,3 +96,17 @@ let g:syntastic_warning_symbol = '⚠'
 " Mustache
 let g:mustache_abbreviations = 1 " activate abbreviations
 
+" Ultisnips
+let g:UltiSnipsJumpForwardTrigger='<c-b>'
+let g:UltiSnipsJumpBackwardTrigger='<c-z>'
+let g:UltiSnipsExpandTrigger = "<nop>"
+let g:ulti_expand_or_jump_res = 0
+function ExpandSnippetOrCarriageReturn()
+    let snippet = UltiSnips#ExpandSnippetOrJump()
+    if g:ulti_expand_or_jump_res > 0
+        return snippet
+    else
+        return "\<CR>"
+    endif
+endfunction
+inoremap <expr> <CR> pumvisible() ? "<C-R>=ExpandSnippetOrCarriageReturn()<CR>" : "\<CR>"
