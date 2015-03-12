@@ -87,7 +87,8 @@ nmap <silent> <C-y> :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif " Open Nerdtree if vim is opened without a file
 
 " Syntastic
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['jsxhint']
+let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper' "Add jsx support
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_error_symbol = '✗'
@@ -110,3 +111,6 @@ function ExpandSnippetOrCarriageReturn()
     endif
 endfunction
 inoremap <expr> <CR> pumvisible() ? "<C-R>=ExpandSnippetOrCarriageReturn()<CR>" : "\<CR>"
+
+" vim-jsx
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
