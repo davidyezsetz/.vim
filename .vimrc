@@ -85,11 +85,13 @@ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 " Nerdtree
 nmap <silent> <C-y> :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif " Open Nerdtree if vim is opened without a file
+let NERDTreeShowHidden = 1 "Show dotfiles
 
 " Syntastic
 let g:syntastic_javascript_checkers = ['jshint']
 "let g:syntastic_javascript_checkers = ['jsxhint'] "Add jsx support
 "let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper' "Add jsx support
+let g:syntastic_javascript_jshint_args = '--config /Users/ds/.jshintrc' 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_error_symbol = '✗'
