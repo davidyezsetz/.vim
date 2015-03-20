@@ -10,12 +10,16 @@ See [bundle](https://github.com/davidyezsetz/.vim/tree/master/bundle)
 3. Make sure you're in your home folder `cd ~`
 4. Get the setup `git clone --recursive https://github.com/davidyezsetz/.vim.git`
 5. Symlink Vim configuration to home folder `ln -s ~/.vim/.vimrc .vimrc`
-6. Install patched powerline fonts: https://github.com/powerline/fonts (dependancy for Airline)
+6. Install [patched powerline fonts](https://github.com/powerline/fonts) (dependancy for Airline)
 7. Install Exuberant CTAGs (dependency for Tagbar)
-8. Install YouCompleteMe dependencies https://github.com/Valloric/YouCompleteMe
+8. Install [YouCompleteMe dependencies](https://github.com/Valloric/YouCompleteMe)
+9. Install [silver surfer](https://github.com/ggreer/the_silver_searcher)
 
 ## Updates
 1. Run `./update`
+
+## Keyboard Shortcuts
+See [Keyboard Shortcuts](keyboard_shortcuts.md)
 
 ## Educational Resources
 - http://www.integralist.co.uk/posts/vim-workflow/
