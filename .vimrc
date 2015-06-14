@@ -79,8 +79,8 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " Emmet
-"let g:user_emmet_expandabbr_key = '<S-tab>'
-imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+let g:user_emmet_expandabbr_key = '<S-tab>'
+"imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 " Nerdtree
 nmap <silent> <C-y> :NERDTreeToggle<CR>
@@ -88,7 +88,8 @@ autocmd vimenter * if !argc() | NERDTree | endif " Open Nerdtree if vim is opene
 let NERDTreeShowHidden = 1 "Show dotfiles
 
 " Syntastic
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['jshint', 'jscs']
+let g:syntastic_scss_checkers = ['scss_lint']
 "let g:syntastic_javascript_checkers = ['jsxhint'] "Add jsx support
 "let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper' "Add jsx support
 let g:syntastic_javascript_jshint_args = '--config /Users/ds/.jshintrc' 
