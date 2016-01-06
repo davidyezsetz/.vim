@@ -7,7 +7,7 @@ filetype plugin indent on       " load file type plugins + indentation
 " Visual
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme elflord 
 set number      " show numbers
 set cursorline  " highlight line of the cursor
 set showcmd     " show partial commands below the status line
@@ -89,10 +89,13 @@ let NERDTreeShowHidden = 1 "Show dotfiles
 
 " Syntastic
 let g:syntastic_javascript_checkers = ['jshint', 'jscs']
+let g:syntastic_javascript_jshint_args = '--config /Users/ds/.jshintrc' 
 let g:syntastic_scss_checkers = ['scss_lint']
+let g:syntastic_coffee_checkers = ['coffeelint', 'coffee']
 "let g:syntastic_javascript_checkers = ['jsxhint'] "Add jsx support
 "let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper' "Add jsx support
-let g:syntastic_javascript_jshint_args = '--config /Users/ds/.jshintrc' 
+let g:syntastic_auto_jump = 1
+let g:syntastic_check_on_wq = 0
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_error_symbol = '✗'
@@ -118,3 +121,6 @@ inoremap <expr> <CR> pumvisible() ? "<C-R>=ExpandSnippetOrCarriageReturn()<CR>" 
 
 " vim-jsx
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
+" tagbar
+nmap <F8> :TagbarToggle<CR>
