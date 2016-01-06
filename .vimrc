@@ -8,6 +8,8 @@ filetype plugin indent on       " load file type plugins + indentation
 syntax enable
 set background=dark
 colorscheme elflord 
+let g:solarized_termcolors = 16
+let g:solarized_termtrans = 1
 set number      " show numbers
 set cursorline  " highlight line of the cursor
 set showcmd     " show partial commands below the status line
