@@ -79,3 +79,9 @@
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala
+[submodule "bundle/vim-colors-bluedrake"]
+	path = bundle/vim-colors-bluedrake
+	url = https://github.com/MichaelMalick/vim-colors-bluedrake
+[submodule "bundle/vim-colors_duotones"]
+	path = bundle/vim-colors_duotones
+	url = https://github.com/atelierbram/vim-colors_duotones
