@@ -7,7 +7,7 @@ filetype plugin indent on       " load file type plugins + indentation
 " Visual
 syntax enable
 set background=dark
-colorscheme elflord 
+colorscheme solarized 
 let g:solarized_termcolors = 16
 let g:solarized_termtrans = 1
 set number      " show numbers
