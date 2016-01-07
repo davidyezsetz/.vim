@@ -6,10 +6,9 @@ filetype plugin indent on       " load file type plugins + indentation
 
 " Visual
 syntax enable
+let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized 
-let g:solarized_termcolors = 16
-let g:solarized_termtrans = 1
 set number      " show numbers
 set cursorline  " highlight line of the cursor
 set showcmd     " show partial commands below the status line
@@ -24,7 +23,7 @@ set foldmethod=indent   " fold based on indent level
 set foldlevelstart=10   " open most folds by default
 set foldnestmax=10      " 10 nested fold max
 
-" statusline
+"statusline
 "set laststatus=2                              " display status line
 "set statusline=
 "set statusline+=%<\                           " cut at start
