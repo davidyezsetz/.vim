@@ -85,3 +85,6 @@
 [submodule "bundle/vim-colors_duotones"]
 	path = bundle/vim-colors_duotones
 	url = https://github.com/atelierbram/vim-colors_duotones
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim
