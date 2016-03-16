@@ -12,3 +12,4 @@
 | `h (H)`       | open in horizontal split (silently)
 | `(g)v`        | open in vertical split (silently)
 | `q`           | close quickfix windowclose quickfix window
+| `:echo bufnr('%')`| echo buffer number
