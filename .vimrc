@@ -135,3 +135,8 @@ let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 " tagbar
 nmap <F8> :TagbarToggle<CR>
+
+" scala
+au BufRead,BufNewFile conf/routes set filetype=play2-routes
+au BufRead,BufNewFile conf/*.conf set filetype=play2-conf
+au BufRead,BufNewFile */*.scala.html set filetype=play2-html
