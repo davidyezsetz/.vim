@@ -1,5 +1,6 @@
 execute pathogen#infect()
 
+
 set nocompatible                " choose no compatibility with legacy vi
 set encoding=utf-8
 filetype plugin indent on       " load file type plugins + indentation
@@ -7,10 +8,9 @@ filetype plugin indent on       " load file type plugins + indentation
 " Visual
 syntax enable
 filetype on
-au BufNewFile,BufRead *.scala.html set filetype=scala
 let g:solarized_termtrans = 1
 set background=dark
-colorscheme solarized 
+colorscheme solarized
 set number      " show numbers
 set cursorline  " highlight line of the cursor
 set showcmd     " show partial commands below the status line
@@ -44,6 +44,8 @@ set foldnestmax=10      " 10 nested fold max
 " Vim-Airline
 let g:airline_powerline_fonts = 1 "automatically download symbols
 let g:airline_theme = 'light'     "set colours
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#buffer_nr_format = '%s: '
 
 
 " Whitespace
@@ -74,6 +76,10 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" map []
+nnoremap ä [
+nnoremap Ä ]
+
 " CRTLP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
@@ -94,7 +100,7 @@ let NERDTreeShowHidden = 1 "Show dotfiles
 
 " Syntastic
 let g:syntastic_javascript_checkers = ['jshint', 'jscs']
-let g:syntastic_javascript_jshint_args = '--config /Users/ds/.jshintrc' 
+let g:syntastic_javascript_jshint_args = '--config /Users/ds/.jshintrc'
 let g:syntastic_scss_checkers = ['scss_lint']
 let g:syntastic_coffee_checkers = ['coffeelint', 'coffee']
 "let g:syntastic_javascript_checkers = ['jsxhint'] "Add jsx support
