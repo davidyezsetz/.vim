@@ -29,3 +29,4 @@ See [Keyboard Shortcuts](keyboard_shortcuts.md)
 - http://vimcasts.org/episodes/archive
 - http://derekwyatt.org/vim/tutorials/novice/#Welcome
 - http://usevim.com/2012/04/13/registers/
+- [tern config example](https://atom.io/packages/atom-ternjs)
